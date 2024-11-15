@@ -1,0 +1,105 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Nền sáng cho sự nổi bật */
+    border-radius: 15px; /* Bo góc cho container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho container */
+  }
+  
+  h1 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .text-center {
+    margin: 20px 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease; /* Hiệu ứng nền khi hover */
+  }
+  
+  .table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1; /* Nền sáng hơn khi hover vào hàng */
+  }
+  
+  .table img {
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+    transition: transform 0.3s ease; /* Hiệu ứng phóng to */
+  }
+  
+  .table img:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh khi hover */
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+    transition: border-color 0.3s ease; /* Hiệu ứng chuyển màu viền */
+  }
+  
+  input[type="number"]:focus {
+    border-color: #007bff; /* Chuyển màu viền khi focus */
+    outline: none; /* Bỏ viền ngoài */
+  }
+  
+  .btn {
+    border-radius: 25px;
+    transition: background-color 0.4s ease, transform 0.3s ease; /* Hiệu ứng cho nút */
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px); /* Nâng nút lên khi hover */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333; /* Thay đổi màu khi hover */
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Thay đổi màu khi hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 0.9rem; /* Giảm kích thước chữ trên màn hình nhỏ */
+    }
+  
+    input[type="number"] {
+      width: 50px; /* Điều chỉnh chiều rộng của input trên màn hình nhỏ */
+    }
+  }
+  

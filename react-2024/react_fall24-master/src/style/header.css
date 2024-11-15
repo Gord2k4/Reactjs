@@ -1,0 +1,41 @@
+/* Header.css */
+.navbar {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb); /* Gradient nền */
+    transition: background 0.3s ease; /* Hiệu ứng chuyển màu nền */
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu chữ */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Đường viền cho nút toggle */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255,255,255,.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Màu icon */
+  }
+  
+  .nav-link {
+    color: #ffffff; /* Màu chữ liên kết */
+    transition: color 0.3s ease, transform 0.2s ease; /* Hiệu ứng chuyển màu và phóng to */
+  }
+  
+  .nav-link:hover {
+    color: #ffeb3b; /* Màu chữ khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+  }
+  
+  .nav-item.active .nav-link {
+    font-weight: bold;
+    color: #ffeb3b; /* Màu chữ cho liên kết đang hoạt động */
+  }
+  
+  .navbar-nav {
+    margin-left: auto; /* Đẩy các mục sang bên phải */
+  }
+  

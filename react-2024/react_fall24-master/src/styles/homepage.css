@@ -1,0 +1,108 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Khoảng cách giữa các cột */
+}
+
+.card {
+  flex: 1; /* Tạo các card có cùng chiều cao */
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 10px; /* Khoảng cách giữa các card */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Đảm bảo chiều cao card body bằng nhau */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; /* Khoảng cách với description */
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 10px;
+  flex-grow: 1; /* Đảm bảo description có thể chiếm không gian */
+}
+
+.card .btn {
+  margin-top: auto; /* Đẩy nút xuống dưới cùng */
+  border-radius: 25px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+  font-size: 1.2rem;
+  color: #777;
+  margin: 20px 0;
+}
+
+/* Loading spinner styling */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
